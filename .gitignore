@@ -14,3 +14,8 @@ __pycache__/
 
 # VS Code의 개인 설정, 확장 설정 등이 저장되는 폴더
 .vscode/
+
+# 로컬 환경설정은 제외하고 예시 파일은 추적
+.env
+.env.*
+!.env.example
