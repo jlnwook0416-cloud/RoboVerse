@@ -1,0 +1,18 @@
+<mujoco model="RoboVerse world">
+  <!-- MuJoCo distances are in meters; the ground surface is at z = 0. -->
+  <option gravity="0 0 -9.81"/>
+
+  <asset>
+    <texture name="sky" type="skybox" builtin="gradient"
+             rgb1="0.10 0.15 0.22" rgb2="0.23 0.31 0.40"
+             width="512" height="512"/>
+  </asset>
+
+  <worldbody>
+    <light name="sun" pos="0 0 5" dir="-0.3 0.4 -1" directional="true"/>
+    <camera name="overview" mode="fixed" pos="4 -6 3"
+            xyaxes="0.83205 0.55470 0 -0.21243 0.31865 0.92308"/>
+    <geom name="ground" type="plane" size="10 10 0.1"
+          rgba="0.68 0.73 0.72 1" contype="1" conaffinity="1"/>
+  </worldbody>
+</mujoco>
